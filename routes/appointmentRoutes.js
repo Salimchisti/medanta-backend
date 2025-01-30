@@ -6,8 +6,8 @@ const { createAppointment, getAppointments } = require('../controllers/appointme
 const router = express.Router();
 
 // Middleware to handle JSON data and CORS
-router.use(cors());
-router.use(bodyParser.json());
+// router.use(cors());
+// router.use(bodyParser.json());
 
 // POST route to create a new appointment
 router.post('/', createAppointment);
